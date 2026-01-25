@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import{Header} from "./components/header/Header.tsx";
 
 export const metadata: Metadata = {
   title: "Project 3",
@@ -14,6 +15,7 @@ export default function RootLayout({
   return (
     <html lang="vi" suppressHydrationWarning>
       <body>
+        <Header/>
         {children}
       </body>
     </html>
