@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import Link from "next/link";
-import {HeaderMenu} from "./HeaderMenu.tsx"
+import {HeaderMenu} from "./HeaderMenu"
 import { FaChevronRight } from "react-icons/fa";
 import { FaChevronDown } from "react-icons/fa";
 import { IoMdMenu } from "react-icons/io";
@@ -28,7 +28,7 @@ export const Header = () => {
                     <button className="text-[30px] text-[#FFFFFF] lg:hidden ml-[12px] cursor-pointer"
                     onClick={()=>setShowMenu(!showMenu)}
                     > <IoMdMenu /> </button> 
-                    <div className={"bg-[#000000] fixed top-[0] left-[0] h-[100%] w-[100%] opacity-[0.3] lg:hidden cursor-pointer "
+                    <div className={"bg-[#000000] fixed top-[0] left-[0] h-[100%] w-[100%] opacity-[0.3] lg:hidden cursor-pointer z-[99] "
                         +(showMenu?"":"hidden")
                     }
                     onClick={()=>setShowMenu(false)}

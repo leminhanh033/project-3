@@ -149,7 +149,7 @@ export const HeaderMenu = (props:{showMenu:boolean}) => {
     
     return <>
         <div className={
-            "list gap-[30px] h-[100%] fixed lg:relative bg-[#000065] lg:bg-transparent lg:top-[0] top-[65px] left-[0] lg:flex lg:w-[auto] w-[320px] "
+            "list gap-[30px] h-[100%] fixed lg:relative bg-[#000065] lg:bg-transparent lg:top-[0] top-[0] left-[0] lg:flex lg:w-[auto] w-[320px] "
             +" z-[9999]  "
             +(showMenu?"":"hidden")}>
             {menu.map((item, index) => (
