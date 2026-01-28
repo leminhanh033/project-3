@@ -36,10 +36,10 @@ export const CompanyCard=()=> {
     ]
     return (
         <>
-            <div className="mt-[30px] grid lg:grid-cols-3 grid-cols-2 gap-y-[20px] sm:gap-x-[20px] gap-x-[10px] ">
+            <div className="mt-[30px] grid lg:grid-cols-3 grid-cols-2 gap-y-[20px] sm:gap-x-[20px] gap-x-[10px] items-stretch ">
                 {
                     list.map((item) => (
-                        <div className="pt-[32px] flex flex-col items-center gap-[24px] relative rounded-[8px] overflow-hidden"
+                        <div className="pt-[32px] flex flex-col items-center gap-[24px] relative rounded-[8px] overflow-hidden h-full"
                             style={{ background: "linear-gradient(180deg, #F6F6F6 2.38%, #FFFFFF 70.43%)" }}>
 
                             <img src="/images/Frame.png" alt="" className="absolute top-[0] left-[0] " />
@@ -55,7 +55,7 @@ export const CompanyCard=()=> {
                                 <Link href="#">{item.name}</Link>
                             </div>
 
-                            <div className="flex sm:flex-row flex-col justify-between items-center w-[100%] py-[12px] px-[16px] bg-[#F7F7F7]">
+                            <div className="mt-[auto] flex sm:flex-row flex-col justify-between items-center w-[100%] py-[12px] px-[16px] bg-[#F7F7F7]">
                                 <div className="font-[400] text-[14px] text-[#414042]">Ho Chi Minh</div>
                                 <div className="flex items-center gap-[2px]">
                                     <FaUserTie className="text-[#000096] text-[16px] " />
