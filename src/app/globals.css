@@ -37,7 +37,7 @@
 }
 /* end container */
 
-input,select{
+input,select,textarea{
     outline: none;
 }
 
