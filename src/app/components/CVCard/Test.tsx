@@ -8,13 +8,9 @@ import { FaPhoneAlt } from "react-icons/fa";
 import { FaEye } from "react-icons/fa";
 import { FaCircleCheck } from "react-icons/fa6";
 
-
-
-
 export const Test = () => {
     const [check, setcheck] = useState(false);
     const [ignore, setignore] = useState(false);
-    console.log(check,ignore);
     return (
         <>
             <div className="p-[20px_16px] h-full flex flex-col items-center relative rounded-[8px] overflow-hidden sm:w-auto w-[350px]"
