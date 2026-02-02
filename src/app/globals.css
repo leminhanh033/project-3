@@ -41,3 +41,10 @@ input,select,textarea{
     outline: none;
 }
 
+.section-1 .just-validate-error-label{
+   color:#FFFFFF !important;
+   position:absolute;
+   left:0;
+   top:100%;   
+}
+
