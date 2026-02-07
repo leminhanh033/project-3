@@ -4,6 +4,7 @@ import { FaUserTie } from "react-icons/fa";
 import { FaBriefcase } from "react-icons/fa";
 import { MdPlace } from "react-icons/md";
 import { GrFormNextLink } from "react-icons/gr";
+import {ApplyForm} from "@/app/components/applyform/ApplyForm"
 
 export const metadata: Metadata = {
     title: "Chi tiết công việc",
@@ -11,9 +12,11 @@ export const metadata: Metadata = {
 }
 
 export default function JobDetail() {
+    
     return (
         <>
-            <div className="mt-[30px]">
+            {/* section-4 */}
+            <div className="section-4 mt-[30px]">
                 <div className="container flex lg:flex-row flex-col gap-[30px] items-start">
                     <div className="left flex-1">
                         <div className="p-[20px] rounded-[8px]" style={{ border: "1px solid #DEDEDE" }}>
@@ -54,62 +57,43 @@ export default function JobDetail() {
                             </div>
                         </div>
 
-                        <div className="mt-[20px] p-[20px] rounded-[8px]" style={{ border: "1px solid #DEDEDE" }}>
-                            <div className="font-[700] text-[20px]">Ứng tuyển ngay</div>
-                            <form action="" className="mt-[20px] flex flex-col gap-[15px]">
-                                <div className="font-[500] text-[14px]">
-                                    <div>Họ tên *</div>
-                                    <input type="text" className="w-[100%] rounded-[4px] py-[14px] pl-[20px]" style={{ border: "1px solid #DEDEDE" }} />
-                                </div>
-                                <div className="font-[500] text-[14px]">
-                                    <div>Email *</div>
-                                    <input type="text" className="w-[100%] rounded-[4px] py-[14px] pl-[20px]" style={{ border: "1px solid #DEDEDE" }} />
-                                </div>
-                                <div className="font-[500] text-[14px]">
-                                    <div>Số điện thoại *</div>
-                                    <input type="text" className="w-[100%] rounded-[4px] py-[14px] pl-[20px]" style={{ border: "1px solid #DEDEDE" }} />
-                                </div>
-                                <div className="font-[500] text-[14px]">
-                                    <div>File CV dạng PDF *</div>
-                                    <input type="file" className="w-[100%] rounded-[4px] py-[14px] pl-[20px]" style={{ border: "1px solid #DEDEDE" }} />
-                                </div>
-                                <button className="bg-[#0088FF] rounded-[4px] py-[14px] font-[700] text-[16px] text-[#FFFFFF] cursor-pointer">Gửi CV ứng tuyển</button>
-                            </form>
-                        </div>
+                        <ApplyForm/>
                     </div>
 
                     <div className="right lg:w-[395px] w-[100%] rounded-[8px] p-[20px] " style={{ border: "1px solid #DEDEDE" }}>
                         <div className="flex gap-[12px]">
-                            <img src="/images/right-detail-image.png" alt="" className="h-[100px] w-[100px] rounded-[4px]"/>
+                            <img src="/images/right-detail-image.png" alt="" className="h-[100px] w-[100px] rounded-[4px]" />
                             <div>
                                 <div className="font-[700] text-[18px]">LG CNS Việt Nam</div>
                                 <Link href="#" className="flex items-center gap-[8px] font-[400] text-[16px] text-[#0088FF] cursor-pointer">
                                     <div>Xem công ty</div>
-                                    <GrFormNextLink className="text-[24px]"/>
+                                    <GrFormNextLink className="text-[24px]" />
                                 </Link>
-                            </div>                            
+                            </div>
                         </div>
                         <div className="mt-[20px] font-[400] text-[16px]">
-                                <div className="flex justify-between">
-                                    <div className="text-[#A6A6A6]">Mô hình công ty</div>
-                                    <div className="text-[#121212]">Sản phẩm</div>
-                                </div>
-                                <div className="flex justify-between">
-                                    <div className="text-[#A6A6A6]">Quy mô công ty</div>
-                                    <div className="text-[#121212]">151 - 300 nhân viên</div>
-                                </div>
-                                <div className="flex justify-between">
-                                    <div className="text-[#A6A6A6]">Thời gian làm việc</div>
-                                    <div className="text-[#121212]">Thứ 2 - Thứ 6</div>
-                                </div>
-                                <div className="flex justify-between">
-                                    <div className="text-[#A6A6A6]">Làm việc ngoài giờ</div>
-                                    <div className="text-[#121212]">Không có OT</div>
-                                </div>
+                            <div className="flex justify-between">
+                                <div className="text-[#A6A6A6]">Mô hình công ty</div>
+                                <div className="text-[#121212]">Sản phẩm</div>
                             </div>
+                            <div className="flex justify-between">
+                                <div className="text-[#A6A6A6]">Quy mô công ty</div>
+                                <div className="text-[#121212]">151 - 300 nhân viên</div>
+                            </div>
+                            <div className="flex justify-between">
+                                <div className="text-[#A6A6A6]">Thời gian làm việc</div>
+                                <div className="text-[#121212]">Thứ 2 - Thứ 6</div>
+                            </div>
+                            <div className="flex justify-between">
+                                <div className="text-[#A6A6A6]">Làm việc ngoài giờ</div>
+                                <div className="text-[#121212]">Không có OT</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
+            {/* end section-4 */}
+
         </>
     )
 }

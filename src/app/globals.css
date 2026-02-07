@@ -45,6 +45,12 @@ input,select,textarea{
    color:#FFFFFF !important;
    position:absolute;
    left:0;
-   top:100%;   
+   top:100%;  
 }
+
+.just-validate-error-label{
+    display:block;
+}
+
+
 
