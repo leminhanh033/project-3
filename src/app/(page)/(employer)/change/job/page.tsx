@@ -10,6 +10,7 @@ export const metadata:Metadata={
 export default function ChangeJob(){
     return (
         <>
+        {/* section 9 */}
         <div className="mt-[60px]">
             <div className="container">
                 <div className="rounded-[8px] p-[20px]" style={{border: "1px solid #DEDEDE"}}>
@@ -21,6 +22,8 @@ export default function ChangeJob(){
                 </div>
             </div>
         </div>
+        {/* end section 9 */}
+
         </>
     )
 }

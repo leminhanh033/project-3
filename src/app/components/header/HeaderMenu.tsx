@@ -158,7 +158,7 @@ export const HeaderMenu = (props:{showMenu:boolean}) => {
                         <div className="inner-text text-[#FFFFFF] font-[600] text-[16px] h-[40px] lg:h-[auto] flex-1"><Link href={item.link}> {item.name}</Link></div>
                         {item.child.length>0&&<FaChevronDown className="text-[#FFFFFF]" />}
                     </div>
-                    <ul className="inner-list-down pl-[20px] lg:absolute flex top-[100%] left-[0] bg-[#000065] w-[300px] rounded-[4px] group-hover/sub1:block flex-wrap hidden">
+                    <ul className="inner-list-down lg:absolute flex top-[100%] left-[0] bg-[#000065] w-[300px] rounded-[4px] group-hover/sub1:block flex-wrap hidden">
                         {item.child.map((item2, index2) => (
                             <li className="flex items-center justify-between lg:relative group/sub2 flex flex-wrap w-[100%] h-[100%]">
                                 <div className="flex justify-between items-center flex px-[16px] py-[10px]  hover:bg-[#000096] w-[100%] h-[100%]">
@@ -166,7 +166,7 @@ export const HeaderMenu = (props:{showMenu:boolean}) => {
                                     {item2.child.length>0&&<FaChevronRight className="text-[#FFFFFF]" />}
                                 </div>
                                 {item2.child.length>0&& 
-                                <ul className="small-list-right pl-[20px] lg:absolute flex flex-wrap top-[0] left-[300px] bg-[#000065] w-[280px] rounded-[4px] group-hover/sub2:block hidden ">
+                                <ul className="small-list-right lg:absolute flex flex-wrap top-[0] left-[100%] bg-[#000065] w-[280px] rounded-[4px] group-hover/sub2:block hidden ">
                                     {item2.child.map((item3)=>(
                                     <li className=" text-[#FFFFFF] font-[600] text-[16px] px-[16px] py-[10px] hover:bg-[#000096]"><Link href={item3.link}>{item3.name}</Link></li>
                                     ))}

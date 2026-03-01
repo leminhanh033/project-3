@@ -16,6 +16,7 @@ export const metadata: Metadata = {
 export default function CVManage() {
     return (
         <>
+        {/* section 10 */}
             <div className="mt-[60px]">
                 <div className="container">
                     <div>
@@ -185,6 +186,8 @@ export default function CVManage() {
                     </div>
                 </div>
             </div>
+        {/*end section 10 */}
+
         </>
     )
 }
