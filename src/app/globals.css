@@ -50,7 +50,15 @@ input,select,textarea{
 
 .just-validate-error-label{
     display:block;
+    color:"red";
 }
 
+.tox .tox-statusbar__branding a{
+    display:none !important;
+}
+.tox .tox-promotion{
+    display:none !important;
+
+}
 
 

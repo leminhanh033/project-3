@@ -9,6 +9,7 @@ export const metadata: Metadata = {
 export default function JobManage() {
     return (
         <>
+        {/* section 8 */}
             <div className="mt-[60px]">
                 <div className="container">
                     <div>
@@ -25,6 +26,8 @@ export default function JobManage() {
                     </div>
                 </div>
             </div>
+        {/* end section 8 */}
+
         </>
     )
 }

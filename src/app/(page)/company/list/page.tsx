@@ -9,6 +9,7 @@ export const metadata: Metadata = {
 export default function ListCompany() {
     return (
         <>
+        {/* section-5 */}
             <div className="mt-[60px]">
                 <div className="container">
                     <div className="font-[700] sm:text-[28px] text-[24px] text-center">
@@ -25,6 +26,8 @@ export default function ListCompany() {
 
                 </div>
             </div>
+        {/* end section-5 */}
+
         </>
     )
 }

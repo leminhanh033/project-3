@@ -11,6 +11,7 @@ export const metadata: Metadata = {
 export default function CompanyDetail() {
     return (
         <>
+        {/* section 6 */}
             <div className="mt-[30px]">
                 <div className="container">
                     <div className="right w-[100%] rounded-[8px] p-[20px] " style={{ border: "1px solid #DEDEDE" }}>
@@ -55,6 +56,8 @@ export default function CompanyDetail() {
                     </div>
                 </div>
             </div>
+        {/* end section 6 */}
+
         </>
     )
 }
