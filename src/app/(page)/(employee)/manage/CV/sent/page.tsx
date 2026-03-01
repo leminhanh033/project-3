@@ -9,6 +9,7 @@ export const metadata: Metadata = {
 export default function ManageCVSent() {
     return (
         <>
+        {/* section 13 */}
             <div className="mt-[60px]">
                 <div className="container">
                     <div>
@@ -27,6 +28,8 @@ export default function ManageCVSent() {
                     </div>
                 </div>
             </div>
+        {/*end section 13 */}
+
         </>
     )
 }
