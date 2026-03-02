@@ -1,8 +1,7 @@
 "use client";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import JustValidate from 'just-validate';
 import { Editor } from '@tinymce/tinymce-react';
-
 export const CompanyInforForm = () => {
     useEffect(() => {
         const validate = new JustValidate('#companyInforForm', {
@@ -16,28 +15,28 @@ export const CompanyInforForm = () => {
             }
         ]
         )
-        .addField('#email', [
-            {
-                rule: "required",
-                errorMessage: "Vui lòng nhập email",
-            }
-        ])
-        .addField('#logo',[
-           {
-                rule: 'files',
-                value: {
-                    files: {
-                        extensions: ['jpeg', 'jpg', 'png'],
-                        types: ['image/jpeg', 'image/jpg', 'image/png'],
+            .addField('#email', [
+                {
+                    rule: "required",
+                    errorMessage: "Vui lòng nhập email",
+                }
+            ])
+            .addField('#logo', [
+                {
+                    rule: 'files',
+                    value: {
+                        files: {
+                            extensions: ['jpeg', 'jpg', 'png'],
+                            types: ['image/jpeg', 'image/jpg', 'image/png'],
+                        },
                     },
+                    errorMessage: "Vui lòng chỉ thêm ảnh"
                 },
-                errorMessage:"Vui lòng chỉ thêm ảnh"
-            }, 
-        ])
-        .onSuccess(( event: any ) => {
-            console.log(event.target.companyName.value);
-            console.log(event.target.email.value);
-        })
+            ])
+            .onSuccess((event: any) => {
+                console.log(event.target.companyName.value);
+                console.log(event.target.email.value);
+            })
 
     }, [])
     return (
